@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>LogHelper</id>
+    <version>0.1.1.0</version>
+    <title>LogHelper</title>
+    <authors>Mish Ochu</authors>
+    <owners>Mish Ochu</owners>
+    <licenseUrl>http://www.opensource.org/licenses/MS-PL</licenseUrl>
+    <projectUrl>https://github.com/mishfit/LogHelper</projectUrl>
+    <iconUrl>http://mishochu.com/images/nuget_logs.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The goal of LogHelper is to allow devs to quickly and easily add logging to all classes with minimal effort.</description>
+    <summary>The goal of LogHelper is to allow devs to quickly and easily add logging to all classes with minimal effort.</summary>
+    <releaseNotes />
+    <tags>logging log4net</tags>
+    </metadata>
+    <files>
+      <file src="bin\Release\LogHelper.dll" target="lib\net45\LogHelper.dll" />
+      <file src="bin\Release\LogHelper.XML" target="lib\net45\LogHelper.XML" />
+      <file src="bin\Release\log4net.dll" target="lib\net45\log4net.dll" />
+      <file src="bin\Release\NET40\LogHelper.dll" target="lib\net40\LogHelper.dll" />
+      <file src="bin\Release\NET40\LogHelper.XML" target="lib\net40\LogHelper.XML" />
+      <file src="bin\Release\NET40\LogHelper.dll" target="lib\net40\LogHelper.dll" />
+      <file src="tools\install.ps1" target="tools\install.ps1" />
+    </files>
+</package>
