@@ -20,18 +20,18 @@ namespace Demo
   {
     static void Main(string[] args)
     {
-		var foo = new Foo();
+        var foo = new Foo();
 
-		foo.Bar();
+        foo.Bar();
     }
   }
 
   public class Foo
   {
-	public void Bar()
-	{
-		this.Log(LogLevel.Trace, "Logged it!");
-	}
+    public void Bar()
+    {
+        this.Log(LogLevel.Trace, "Logged it!");
+    }
   }
 }
 ```
