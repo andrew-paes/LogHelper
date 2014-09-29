@@ -1,14 +1,30 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+#if USE_MSTEST
+namespace LogHelper.Tests
+{
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+    [TestClass]
+    public class MSLogHelperTests
+    {
+        Lazy<LogHelperTests> _tester = new Lazy<LogHelperTests>(() => { return new LogHelperTests(); });
+
+        [TestMethod]
+        public void TestOne()
+        {
+            _tester.Value.TestOne();
+        }
+    }
+}
+#endif
 
 namespace LogHelper.Tests
 {
-    [TestClass]
-    public class UnitTest1
+    using Xunit;
+
+    public class LogHelperTests
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-        }
+        [Fact]
+        public void TestOne() { }
     }
 }
